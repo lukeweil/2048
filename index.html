@@ -1,56 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" manifest="cache.appcache">
+<html>
 <head>
   <meta charset="utf-8">
-  <title>Make and Play Udacity 2048</title>
+  <title>2048 by Luke Weil</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="keywords" content="HTML,CSS,Javascript,Make your own 2048,Play 2048">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="format-detection" content="telephone=no" />
-
-  <meta property="og:title" content="2048 game"/>
-  <meta property="og:site_name" content="2048 game"/>
-  <meta property="og:description" content="Play Udacity 2048. Then, make your own 2048 game in Udacity's 2 hour mini course for programming beginners!"/>
-  <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
 </head>
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">Make 2048</h1>
+      <h1 class="title">2048</h1>
+      <p class="subtitle">Game of Thrones Editon</p>
+      <h1 class="subtitle-name">by <a href="http://twitter.com/WeilLuke">Luke Weil</a></h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
 
+
     <div class="above-game">
-      <p class="game-intro">
+      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
       <a class="restart-button">New Game</a>
-      Use the arrow keys to slide  tiles. Combine similar tiles to create new ones.</p>
-      
+
     </div>
 
-    <div class="pre-game">
-      <p class="learn">Learn to make your own version of 2048 in 30 minutes in Udacity's mini online class for beginners.</p><a class="learn" href="https://www.udacity.com/course/ud248">Take the Class!</a>
-    </div>
 
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-535c8fbc49ec17c7"></script>
+<!-- AddThis Button END -->
+
+
+    <p class="spoiler">Spoiler Alert: The tiles are a chronological list of character deaths!</p>
 
     <div class="game-container">
       <div class="game-message">
         <p></p>
         <div class="lower">
-	        <a href="http://www.udacity.com/course/ud248"class="learn learn-low">Take the Class!</a>
-          <a class="retry-button">Play Again</a>
-          <div class="score-sharing"></div>
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
         </div>
       </div>
 
@@ -86,17 +90,54 @@
       </div>
     </div>
 
+    <div class="audio">
+      <div>For your pleasure:</div>
+      <audio loop="loop" class="audio" autoplay="autoplay" controls="controls">  
+         <source src="assets/theme.mp3" />
+      </audio> 
+    </div>
+    <div class="donate">
+      <script src="http://agilob.net/widget/coin.js"></script>
+      <script>
+        CoinWidgetCom.go({
+          wallet_address: "D8VzKNxofWW5tLJh3uGZHnxnpVZx3jp7ME"
+          , currency: "dogecoin"
+          , counter: "amount"
+          , alignment: "bl"
+          , qrcode: true
+          , auto_show: false
+          , lbl_button: "Donate DOGE"
+          , lbl_address: "My Dogecoin Address:"
+          , lbl_amount: "DOGE"
+        });
+      </script>
+      <script>
+      CoinWidgetCom.go({
+        wallet_address: "14qGXT5JLctUX4qXV6VkuZF4mdraGuqZ4P"
+        , currency: "bitcoin"
+        , counter: "amount"
+        , alignment: "bl"
+        , qrcode: true
+        , auto_show: false
+        , lbl_button: "Donate BTC"
+        , lbl_address: "My Bitcoin Address:"
+        , lbl_count: "donations"
+        , lbl_amount: "BTC"
+      });
+      </script>
+    </div>
+    <p class="donate-message">Very thanks, love coffee much.</p>
 
     <p class="game-explanation">
-      <strong class="important">Make your own version:</strong> If you'd like to make your own version of this game, check out Udacity's newest course for beginners <a href="https://www.udacity.com/course/ud248" target="_blank">Make your own 2048</a>. No programming experience is required and in less than half an hour you'll dig into the source code, make some changes, and have your own version of the game to share.
-    </p>
-    <hr>
-    <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same value touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
     </p>
     <hr>
     <p>
-    This is a modified version of the <a href="http://gabrielecirulli.github.io/2048/" target="_blank">original game</a> created by Gabriele Cirulli.
+    <strong class="important">Note:</strong> This is a fan version by <a href="https://github.com/lukeweil">Luke Weil</a>. Any Copyright content belongs to their respective owners, and used in accordance with fair use by parody/satire.
+    </p>
+    <hr>
+    <p>
+    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
     </p>
   </div>
 
@@ -110,7 +151,5 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
 </body>
 </html>
