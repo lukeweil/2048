@@ -787,7 +787,7 @@ hr {
 
 /* line 523, main.scss */
 .game-explanation {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 520px) {
