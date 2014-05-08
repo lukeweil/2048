@@ -29,7 +29,7 @@ body {
 /* line 49, main.scss */
 html {
   background: url("../assets/bg.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
 /* line 76, helpers.scss */
